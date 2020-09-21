@@ -70,7 +70,7 @@ print("\n")
 # Read data from file 'filename.csv' 
 # (in the same directory that your python process is based)
 # Control delimiters, rows, column names with read_csv (see later) 
-data = pd.read_csv("filename.csv") 
+data = pd.read_csv("quotes.csv") 
 
 # Preview the first 5 lines of the loaded data 
 text=[]
@@ -79,7 +79,7 @@ text=data['Quote']
 print("\n")
 
 # Object for chrome-driver
-driver = webdriver.Chrome(executable_path=r'C:/Users/user/Desktop/chromedriver.exe')
+driver = webdriver.Chrome(executable_path=r'chromedriver.exe')
 
 # Goto 'WhatsApp Web'
 driver.get('https://web.whatsapp.com/')
